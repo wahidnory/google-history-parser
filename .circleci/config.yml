@@ -3,6 +3,10 @@
 # Check https://circleci.com/docs/2.0/language-php/ for more details
 #
 version: 2
+general:
+  branches:
+    only:
+      - develop
 jobs:
   build:
     docker:
@@ -32,6 +36,6 @@ jobs:
           paths:
             - ./vendor
           key: v1-dependencies-{{ checksum "composer.json" }}
-      
+
       # run tests!
       - run: vendor/bin/phpunit
