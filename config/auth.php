@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => MileageApi\User::class,
+            'model' => MileageApi\Entities\User::class,
         ],
 
         // 'users' => [

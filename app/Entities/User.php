@@ -1,6 +1,6 @@
 <?php
 
-namespace MileageApi;
+namespace MileageApi\Entities;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
